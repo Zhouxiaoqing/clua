@@ -1,5 +1,1 @@
-function call(param) do
-
-
-end
-
+print('hello world.')
