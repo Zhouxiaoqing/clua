@@ -11,5 +11,3 @@ lua_test : lua_test.c
 clean:
 	-rm -rf *.o
 	-rm -rf lua_test
-
-#gcc -g -Wall lua_test.c ./libs/liblua.a -o lua_test -lm

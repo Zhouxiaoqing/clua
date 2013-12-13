@@ -12,7 +12,7 @@ int main(int argc, char *argv[]) {
 	L = lua_open();
 
 // 2. run script
-	if (luaL_loadfile(L, "test.lua") || lua_pcall(L, 0, 0, 0)) {
+	if (luaL_loadfile(L, "script/test.lua") || lua_pcall(L, 0, 0, 0)) {
 		// error...
 	}
 
