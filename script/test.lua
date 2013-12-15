@@ -1,4 +1,43 @@
-print('hello world from lua.')
+co = coroutine.create(function()
+	for i = 0, 10, 1 do
+		print(coroutine.status(co));
+		print("will yield : " .. i);
+		coroutine.yield();
+	end
+end)
 
-width = 50;
-height = 100;
+print(coroutine.status(co));
+print(coroutine.resume(co));
+
+print(coroutine.status(co));
+print(coroutine.resume(co));
+
+print(coroutine.status(co));
+print(coroutine.resume(co));
+
+print(coroutine.status(co));
+print(coroutine.resume(co));
+
+print(coroutine.status(co));
+print(coroutine.resume(co));
+
+print(coroutine.status(co));
+print(coroutine.resume(co));
+
+print(coroutine.status(co));
+print(coroutine.resume(co));
+
+print(coroutine.status(co));
+print(coroutine.resume(co));
+
+print(coroutine.status(co));
+print(coroutine.resume(co));
+
+print(coroutine.status(co));
+print(coroutine.resume(co));
+
+print(coroutine.status(co));
+print(coroutine.resume(co));
+
+print(coroutine.status(co));
+print(coroutine.resume(co));
